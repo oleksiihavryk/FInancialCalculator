@@ -1,0 +1,22 @@
+<div class="custom-modal" *ngIf="modal.isActive">
+    <div class="custom-modal-content">
+      <div class="mt-3 mb-3 text-center">
+        <h4 class="h4">{{ title }}</h4>
+      </div>
+      <div class="custom-modal-body">
+        <p>
+          <ng-content></ng-content>
+        </p>
+      </div>
+      <div class="text-center" *ngIf="isQuestion === false">
+        <button class="btn btn-primary text-white" 
+          (click)="closeWithConsequences()">OK</button>
+      </div>
+      <div class="text-center" *ngIf="isQuestion">
+        <button class="btn btn-primary text-white mx-2"
+          (click)="closeWithConsequences()">OK</button>
+        <button class="btn btn-secondary text-white mx-2"
+          (click)="close()">Cancel</button>
+      </div>
+    </div>
+  </div>

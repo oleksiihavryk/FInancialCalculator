@@ -1,0 +1,52 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html {
+    color-scheme: light;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.display-7 {
+    font-size: calc(1.325rem + 0.9vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-8 {
+    font-size: calc(1.275rem + 0.3vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .w-50-auto {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .w-50-auto {
+        width: 100%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .w-50-auto {
+        width: 75%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .w-50-auto {
+        width: 60%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .w-50-auto {
+        width: 50%;
+    }
+}

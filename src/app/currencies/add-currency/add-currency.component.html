@@ -1,0 +1,13 @@
+<h3 class="text-center display-7">Add currency</h3>
+<form class="px-2 m-auto form w-50-auto">
+    <app-input [control]="name" type="text" name="Name">
+    </app-input>
+    <app-input [control]="value" type="number" name="Value">
+    </app-input>
+    <app-input [control]="symbol" type="text" name="Symbol">
+    </app-input>
+    <div class="text-center">
+        <button class="btn btn-primary mx-2" (click)="create()">Create</button>
+        <button class="btn btn-secondary mx-2" (click)="clear()">Clear</button>
+    </div>
+</form>

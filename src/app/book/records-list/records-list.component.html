@@ -1,0 +1,14 @@
+<ul class="mx-5 p-3 list-group">
+    <h3 class="text-center display-7">Records</h3>
+    <div *ngIf="bookService.isHaveAnyRecord">
+        <li class="list-group-item p-0" *ngFor="let record of bookService.records">
+            <app-record [record]="record"></app-record>
+        </li>
+    </div>
+    <div *ngIf="bookService.isHaveAnyRecord === false">
+        <p class="text-center p-3">The system is currently not containing any records.</p>
+    </div>
+</ul>
+<!-- <app-modal [id]="modalId" [afterCloseAction]="createRemoveAction()" [isQuestion]="true">
+    Are you sure about deleting '{{this.deletingCurrency.name}}' from the system?
+</app-modal> -->

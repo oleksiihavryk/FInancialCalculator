@@ -1,0 +1,9 @@
+<h3 class="text-center display-7">Create record</h3>
+<form class="p-2 m-auto form w-50-auto">
+    <app-input [control]="title" type="text" name="Title">
+    </app-input>
+    <div class="text-center">
+        <button class="btn btn-primary mx-2" (click)="create()">Create</button>
+        <button class="btn btn-secondary mx-2" (click)="clear()">Clear</button>
+    </div>
+</form>
